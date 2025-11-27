@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "633075432834",
+    "project_id": "locationsharejob3f",
+    "storage_bucket": "locationsharejob3f.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:633075432834:android:91f4bfd2aa36b7aa9c639b",
+        "android_client_info": {
+          "package_name": "com.example.locationsharejob3f"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB6B49hqwKVK_AjytJ54mNh5RZ767BtS6A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
