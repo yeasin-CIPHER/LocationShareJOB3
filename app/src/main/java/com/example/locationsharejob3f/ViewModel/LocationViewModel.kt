@@ -1,6 +1,8 @@
 package com.example.locationsharejob3f.ViewModel
 
+import android.Manifest
 import android.media.MediaPlayer
+import androidx.annotation.RequiresPermission
 import androidx.lifecycle.ViewModel
 import com.google.android.gms.location.FusedLocationProviderClient
 import com.google.android.gms.tasks.OnCompleteListener
@@ -8,6 +10,7 @@ import javax.security.auth.callback.Callback
 
 class LocationViewModel: ViewModel() {
     private var fusedLocationClient: FusedLocationProviderClient?=null
+    @RequiresPermission(allOf = [Manifest.permission.ACCESS_FINE_LOCATION, Manifest.permission.ACCESS_COARSE_LOCATION])
     fun getLastLocation(callback:(String)-> Unit){
         fusedLocationClient?.lastLocation
             ?.addOnCompleteListener (OnCompleteListener { task ->

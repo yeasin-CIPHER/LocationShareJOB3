@@ -30,6 +30,11 @@ class RegisterActivity : AppCompatActivity() {
             val email = binding.emailEt.text.toString()
             val password = binding.passwordEt.text.toString()
             val name = binding.nameEt.text.toString()
+
+            if (name.isEmpty() || email.isEmpty() || password.isEmpty()) {
+                Toast.makeText(this, "Please fill all fields", Toast.LENGTH_SHORT).show()
+                return@setOnClickListener
+            }
             authViewModel.register(email,password,{
 
                 val location = ""

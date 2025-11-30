@@ -53,10 +53,10 @@ class FireStoreViewModel: ViewModel() {
             .addOnFailureListener {  }
     }
 
-    fun updateUser(userId: String,name: String,email: String,location: String){
+    fun updateUser(userId: String,name: String,location: String){
         val user = hashMapOf(
             "name" to name,
-            "email" to email,
+
             "location" to location
         )
         val userMap = user.toMap()
